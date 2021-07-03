@@ -1,5 +1,5 @@
 obj-m := xpi_gamecon.o
-KVERSION := 'uname -r'
+KVERSION := `uname -r`
 
 all:
 	$(MAKE) -C /lib/modules/$(KVERSION)/build M=$(PWD) modules
